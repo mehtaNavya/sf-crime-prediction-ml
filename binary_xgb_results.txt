@@ -1,0 +1,35 @@
+Accuracy:  0.9707 (97.07%)
+F1-Score:  0.9714
+ROC-AUC:   0.9911
+
+=== CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+    No-Crime       1.00      0.95      0.97    175597
+       Crime       0.95      1.00      0.97    175596
+
+    accuracy                           0.97    351193
+   macro avg       0.97      0.97      0.97    351193
+weighted avg       0.97      0.97      0.97    351193
+
+=== CONFUSION MATRIX ===
+          No-Crime   Crime
+No-Crime    166011    9586
+Crime          712  174884
+
+=== TOP 15 FEATURE IMPORTANCES ===
+PdDistrict_TARAVAL       0.144898
+PdDistrict_BAYVIEW       0.124945
+PdDistrict_CENTRAL       0.100431
+PdDistrict_INGLESIDE     0.096767
+PdDistrict_RICHMOND      0.094782
+PdDistrict_TENDERLOIN    0.088572
+PdDistrict_PARK          0.080546
+PdDistrict_MISSION       0.077645
+PdDistrict_SOUTHERN      0.064672
+PdDistrict_NORTHERN      0.059723
+X                        0.025610
+Y                        0.022575
+Hour                     0.003565
+Month                    0.002562
+Hour_sin                 0.002453

@@ -1,0 +1,32 @@
+Validation Accuracy: 0.3191 (31.91%)
+
+Custom Class Weights:
+  FINANCIAL: 4.0x
+  OTHER: 1.0x
+  PROPERTY: 1.0x
+  PUBLIC_ORDER: 1.2x
+  SUBSTANCE: 1.5x
+  VIOLENT: 5.0x
+
+=== CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+   FINANCIAL       0.20      0.12      0.15      5829
+       OTHER       0.72      0.09      0.16     26146
+    PROPERTY       0.60      0.43      0.50     65109
+PUBLIC_ORDER       0.57      0.11      0.19     44377
+   SUBSTANCE       0.45      0.23      0.30     12484
+     VIOLENT       0.16      0.79      0.27     21652
+
+    accuracy                           0.32    175597
+   macro avg       0.45      0.30      0.26    175597
+weighted avg       0.53      0.32      0.32    175597
+
+=== CONFUSION MATRIX ===
+              FINANCIAL  OTHER  PROPERTY  PUBLIC_ORDER  SUBSTANCE  VIOLENT
+FINANCIAL           673     42      1500           141         87     3386
+OTHER               535   2395      5446           716        296    16758
+PROPERTY           1119    366     27892          1500        388    33844
+PUBLIC_ORDER        698    356      7551          5090       2238    28444
+SUBSTANCE           112     68      1095           945       2865     7399
+VIOLENT             271    119      3148           549        443    17122

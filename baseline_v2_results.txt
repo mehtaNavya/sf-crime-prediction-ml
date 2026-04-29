@@ -1,0 +1,24 @@
+Overall Validation Accuracy: 0.4324 (43.24%)
+
+=== CLASSIFICATION REPORT (6 Groups) ===
+              precision    recall  f1-score   support
+
+   FINANCIAL       0.14      0.24      0.18      5829
+       OTHER       0.35      0.31      0.33     26146
+    PROPERTY       0.58      0.61      0.60     65109
+PUBLIC_ORDER       0.43      0.30      0.35     44377
+   SUBSTANCE       0.31      0.58      0.41     12484
+     VIOLENT       0.31      0.27      0.29     21652
+
+    accuracy                           0.43    175597
+   macro avg       0.35      0.39      0.36    175597
+weighted avg       0.44      0.43      0.43    175597
+
+=== CONFUSION MATRIX ===
+              FINANCIAL  OTHER  PROPERTY  PUBLIC_ORDER  SUBSTANCE  VIOLENT
+FINANCIAL          1396    754      2139           808        389      343
+OTHER              1521   8131      8309          3434       1829     2922
+PROPERTY           3515   6376     39894          7409       2840     5075
+PUBLIC_ORDER       2106   4588     11309         13384       8445     4545
+SUBSTANCE           305    598      1213          2600       7182      586
+VIOLENT             902   2806      5996          3793       2208     5947
