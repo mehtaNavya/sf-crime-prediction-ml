@@ -39,15 +39,15 @@ sf-crime-prediction-ml/
 
 ## Features Used
 
- Feature               Description 
-
- X, Y                  GPS longitude and latitude 
- Hour, Month, Year     Temporal features 
- Hour_sin, Hour_cos    Cyclical encoding of hour 
- Month_sin, Month_cos  Cyclical encoding of month 
- Is_Weekend            Binary flag for Saturday/Sunday 
- PdDistrict (OHE)      One-hot encoded police district (10 districts) 
- DayOfWeek (OHE)       One-hot encoded day of week 
+| Feature | Description |
+|---|---|
+| X, Y | GPS longitude and latitude |
+| Hour, Month, Year | Temporal features |
+| Hour_sin, Hour_cos | Cyclical encoding of hour |
+| Month_sin, Month_cos | Cyclical encoding of month |
+| Is_Weekend | Binary flag for Saturday/Sunday |
+| PdDistrict (OHE) | One-hot encoded police district (10 districts) |
+| DayOfWeek (OHE) | One-hot encoded day of week |
  
 
 ## Models
@@ -61,14 +61,14 @@ Predicts whether a crime will occur at a given location and time.
 ### Multi-Class Classification
 Predicts which of 6 crime categories an incident belongs to.
 
- Category      Examples                    Weight (Weighted XGB) 
-
- PROPERTY      Theft, Burglary, Car theft  1.0× 
- PUBLIC ORDER  Vandalism, Trespassing      1.2× 
- VIOLENT       Assault, Robbery            **5.0×** 
- SUBSTANCE     Drug offenses, DUI          1.5× 
- FINANCIAL     Fraud, Forgery              **4.0×** 
- OTHER         Suspicious activity         1.0× 
+| Category | Examples | Weight (Weighted XGB) |
+|---|---|---|
+| PROPERTY | Theft, Burglary, Car theft | 1.0× |
+| PUBLIC ORDER | Vandalism, Trespassing | 1.2× |
+| VIOLENT | Assault, Robbery | **5.0×** |
+| SUBSTANCE | Drug offenses, DUI | 1.5× |
+| FINANCIAL | Fraud, Forgery | **4.0×** |
+| OTHER | Suspicious activity | 1.0× |
 
 Weighted XGBoost improved VIOLENT crime recall from **27% → 79%** by applying cost-sensitive learning.
 
