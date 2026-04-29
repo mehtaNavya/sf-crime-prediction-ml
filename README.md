@@ -3,9 +3,10 @@ A machine learning pipeline that predicts crime occurrence and category in San F
 
 
 ## Results
+
  Model                       Task              Accuracy    AUC 
 
- XGBoost (Binary)            Crime / No-Crime  97.07%      0.9911 
+ XGBoost (Binary)            Crime / No-Crime  **97.07%**  **0.9911** 
  Random Forest (6-class)     Crime Category    43.24%      — 
  Weighted XGBoost (6-class)  Crime Category    31.91%      — 
 
