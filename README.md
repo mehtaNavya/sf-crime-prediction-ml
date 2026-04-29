@@ -4,11 +4,11 @@ A machine learning pipeline that predicts crime occurrence and category in San F
 
 ## Results
 
- Model                       Task              Accuracy    AUC 
-
- XGBoost (Binary)            Crime / No-Crime  **97.07%**  **0.9911** 
- Random Forest (6-class)     Crime Category    43.24%      — 
- Weighted XGBoost (6-class)  Crime Category    31.91%      — 
+| Model | Task | Accuracy | AUC |
+|---|---|---|---|
+| XGBoost (Binary) | Crime / No-Crime | **97.07%** | **0.9911** |
+| Random Forest (6-class) | Crime Category | 43.24% | — |
+| Weighted XGBoost (6-class) | Crime Category | 31.91% | — |
 
 Key finding: Police district is the strongest predictor of crime, accounting for 87% of feature importance. Location matters far more than time.
 
